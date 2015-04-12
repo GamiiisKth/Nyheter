@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Aftonbladet"
+        android:icon="@drawable/ic_menu_help"
+        android:title="Aftonbladet"
+        />
+    <item android:id="@+id/Expressen"
+        android:icon="@drawable/ic_menu_help"
+        android:title="Expressen" />
+
+    <item android:id="@+id/Dn"
+        android:icon="@drawable/ic_menu_help"
+        android:title="Dagens Nyheter"
+        >
+        <menu>
+            <item
+                android:id="@+id/DagensTv"
+                android:title="DnTv"/>
+
+
+        </menu>
+        </item>
+</menu>
