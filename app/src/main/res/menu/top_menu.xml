@@ -9,6 +9,10 @@
         android:icon="@drawable/ic_menu_help"
         android:title="Expressen" />
 
+    <item android:id="@+id/favorit"
+       android:icon="@drawable/ic_menu_help"
+        android:title="Favorit"/>
+
     <item android:id="@+id/Dn"
         android:icon="@drawable/ic_menu_help"
         android:title="Dagens Nyheter"

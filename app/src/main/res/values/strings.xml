@@ -5,4 +5,10 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_aftonbladet">Aftonbladet</string>
     <string name="title_activity_expressen">Expressen</string>
+    <string name="title_activity_favorit">Favorit</string>
+    <string name="title_activity_onload">onload</string>
+    <string name="load_icon_string">Load Icon</string>
+    <string name="other_button_string">Other Button</string>
+    <string name="image_desc_string">Image</string>
+
 </resources>

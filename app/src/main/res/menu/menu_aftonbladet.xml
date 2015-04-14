@@ -8,7 +8,17 @@
     <item android:id="@+id/Expressen"
         android:icon="@drawable/ic_menu_help"
         android:title="Expressen" />
+    <item android:id="@+id/add"
 
+        android:title="add"
+        android:icon="@drawable/ic_menu_help"
+        />
+
+    <item android:id="@+id/af_favorit"
+
+        android:title="Favorit"
+        android:icon="@drawable/ic_menu_help"
+        />
     <item android:id="@+id/Dn"
         android:icon="@drawable/ic_menu_help"
         android:title="Dagens Nyheter"
