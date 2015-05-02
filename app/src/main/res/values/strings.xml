@@ -11,4 +11,7 @@
     <string name="other_button_string">Other Button</string>
     <string name="image_desc_string">Image</string>
 
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

@@ -1,24 +1,31 @@
 package com.nyheter.joshuapro.nyheter;
 
 import android.annotation.SuppressLint;
+import android.app.ActionBar;
+import android.app.ActionBar.Tab;
+import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.TextView;
+
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 @SuppressLint("SetJavaScriptEnabled")
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
     WebView af;
     WebView ex;
     WebView dn;
+
+
 
 
     @Override
@@ -28,24 +35,25 @@ public class MainActivity extends ActionBarActivity {
 
 
 
-         dn=(WebView) findViewById(R.id.dn_main);
 
 
+        //    dn=(WebView) findViewById(R.id.dn_main);
 
-
-        af = (WebView) findViewById(R.id.af_main);
+        //  af = (WebView) findViewById(R.id.af_main);
 
 
         //setContentView(R.layout.activity_aftonbladet);
         // Set a kind of listener on the WebView so the WebView can intercept
         // URL loading requests if it wants to
 
-        af.setWebViewClient(new HelloWebViewClient());
+        //  af.setWebViewClient(new HelloWebViewClient());
 
-        af.getSettings().setJavaScriptEnabled(true);
-        af.loadUrl("http://www.aftonbladet.se/?latest=true");
+        //af.getSettings().setJavaScriptEnabled(true);
+        //af.loadUrl("http://www.aftonbladet.se/?latest=true");
 
-        loadIcon();
+        // loadIcon();
+
+
 
 
     }
@@ -86,7 +94,7 @@ public class MainActivity extends ActionBarActivity {
 
             case R.id.Expressen:
                 Toast.makeText(getApplicationContext(), "Expressen", Toast.LENGTH_LONG).show();
-               Intent ex_intent=new Intent(this, Expressen.class);
+                Intent ex_intent=new Intent(this, Expressen.class);
                 startActivity(ex_intent);
 
                 return true;
@@ -101,32 +109,32 @@ public class MainActivity extends ActionBarActivity {
                 return  false;
         }
     }
+    /*
+        private void loadIcon() {
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        ex=(WebView) findViewById(R.id.ex_main);
 
-    private void loadIcon() {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    ex=(WebView) findViewById(R.id.ex_main);
-
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-
-                ex.post(new Runnable() {
-                    @Override
-                    public void run() {
-                  ex.setWebViewClient(new HelloWebViewClient());
-
-                 ex.getSettings().setJavaScriptEnabled(true);
-              ex.loadUrl("http://www.Expressen.se");
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
-                });
-            }
-        }).start();
 
-    }
+                    ex.post(new Runnable() {
+                        @Override
+                        public void run() {
+                      ex.setWebViewClient(new HelloWebViewClient());
 
+                  ex.getSettings().setJavaScriptEnabled(true);
+                  ex.loadUrl("http://www.Expressen.se");
+                        }
+                    });
+                }
+            }).start();
+
+        }
+    */
     private class HelloWebViewClient extends WebViewClient {
         private static final String TAG = "HelloWebViewClient";
 
@@ -139,5 +147,15 @@ public class MainActivity extends ActionBarActivity {
             return true;
         }
     }
+
+
+
+
+
+
+
+
+
+
 
 }

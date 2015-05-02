@@ -10,7 +10,7 @@ import java.util.ArrayList;
  */
 public class SaveAndRead extends Application{
 
-    ArrayList<String> favourites = new ArrayList<>();
+    ArrayList<String> favourites = new ArrayList<String>();
 
     public ArrayList<String> getFavourites(){
         return favourites;

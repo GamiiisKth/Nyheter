@@ -1,15 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
+    compileSdkVersion 21
     buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "com.nyheter.joshuapro.nyheter"
         minSdkVersion 14
-        targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
+        targetSdkVersion 19
+
     }
     buildTypes {
         release {
